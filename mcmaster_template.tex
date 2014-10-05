@@ -52,8 +52,8 @@
 
 \widowpenalty=300 %Prevent widows (single sentences at end of page)
 \clubpenalty=300 %Prevent orphans (single sentences on empty pages)
-%\doublespacing %Uncomment to turn on double spacing
-\onehalfspacing %Double spacing is crazy large, don't do it.
+\doublespacing %Uncomment to turn on double spacing
+%\onehalfspacing %Double spacing is crazy large, don't do it.
 %\linenumbers %Uncomment to turn on line numbers
 %\syntaxonly %Uncomment to only check compile for syntax PRODUCES NO OUTPUT
 \setlength{\headheight}{15pt} %Fixes header height
@@ -64,8 +64,8 @@
     pdfmenubar=true,
     pdffitwindow=false,
     pdfstartview={FitV},
-    pdftitle={Thesis Example},
-    pdfauthor={Gabriel A. Devenyi},
+    pdftitle={Integrating sphere-based total diffuse reflectance spectroscopy for the quantification of hemoglobin in skin},
+    pdfauthor={Diana L. Glennie},
     pdfsubject={Subject},
     pdfkeywords={keyword1} {key2} {key3},
     pdfnewwindow=true,
@@ -77,8 +77,8 @@
 }
 %\graphicspath{{graphics/}} %Uncomment if you want to hide all figure files in a graphics/ subdirectory
 
-\title{Thesis Example}
-\author{Gabriel A. Devenyi}
+\title{Integrating sphere-based total diffuse reflectance spectroscopy for the quantification of hemoglobin in skin}
+\author{Diana L. Glennie}
 \date{\today}
 
 %This stuff is used to generate a nomenclature section
@@ -106,20 +106,20 @@
 \pagenumbering{roman}
 \centering
 \vspace*{\fill} %This makes text vertically centered
-{\Large \uppercase{Thesis Example}\\
+{\Large \uppercase{Integrating sphere-based total diffuse reflectance spectroscopy for the quantification of hemoglobin in skin}\\
 \vfill
-By GABRIEL A.\ DEVENYI, B.\ ENG.\\}
+By DIANA L.\ GLENNIE, B.\ SC., M.\ SC.\\}
 \vfill
 A Thesis Submitted to the School of Graduate Studies in Partial Fulfilment of
 the Requirements for the Degree Doctor of Philosophy
 \vfill%This pushes copyright to the bottom
-McMaster University \textcopyright{} Copyright by Gabriel A.\ Devenyi, November 2013
+McMaster University \textcopyright{} Copyright by Diana L.\ Glennie, November 2014
 \end{titlepage}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-{\noindent McMaster University DOCTOR OF PHILOSOPHY (2013) Hamilton, Ontario (Engineering Physics)\\
-TITLE: Thesis Example\\
-AUTHOR: Gabriel A. Devenyi, B.Eng. (McMaster University)\\
-SUPERVISOR: Professor John S. Preston\\
+{\noindent McMaster University DOCTOR OF PHILOSOPHY (2014) Hamilton, Ontario (Medical Physics)\\
+TITLE: Integrating sphere-based total diffuse reflectance spectroscopy for the quantification of hemoglobin in skin\\
+AUTHOR: Diana L. Glennie, B.Sc., M. Sc. (McMaster University)\\
+SUPERVISOR: Professor Thomas J. Farrell\\
 NUMBER OF PAGES: ix,~\pageref{LastPage}}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
     \begin{abstract}
@@ -150,8 +150,8 @@ NUMBER OF PAGES: ix,~\pageref{LastPage}}
     \pagestyle{fancy}
     \fancyhead{}
     \fancyfoot{}
-    \fancyhead[RE,LO]{McMaster University --- Engineering Physics}
-    \fancyhead[LE,RO]{PhD Thesis --- Gabriel A. Devenyi}
+    \fancyhead[RE,LO]{McMaster University --- Medical Physics}
+    \fancyhead[LE,RO]{PhD Thesis --- Diana L. Glennie}
     \fancyfoot[CE,CO]{\thepage}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -159,15 +159,13 @@ NUMBER OF PAGES: ix,~\pageref{LastPage}}
 
 %For large LaTeX documents, it is best practice to separate the material into smaller files so that it is easier to handle, use \include to insert each file into the overall document
 
-\chapter{Chapter 1}
-%\include{chapter1}
-This chapter is about \cite{example}.
-%\todo{Write a chapter here}
+\chapter{Introduction}
+\include{introduction}
 
 \chapter{Chapter 2}
 %\include{chapter2}
 
-\nomenclature{EXPL}{Example Definition of Abbreviation}%
+%\nomenclature{EXPL}{Example Definition of Abbreviation}%
 
 \printbibliography
 %\printindex
