@@ -27,7 +27,8 @@
 \usepackage{syntonly}%Provides syntax-only latex runs, useful for when the document starts getting big!
 \usepackage{csquotes}
 \usepackage{float} %Fixes up floats (figures) and provides the H placement modifier (place the float RIGHT HERE). with great power...
-\usepackage[style=numeric-comp,backend=biber,sorting=none,backref=true,maxnames=99,alldates=iso8601]{biblatex} %Sets up the referencing system, standard numeric ordering, prints the page numbers refereced as a back reference, prints all names, makes dates iso dates
+%\usepackage[style=numeric-comp,backend=biber,sorting=none,backref=true,maxnames=99,alldates=iso8601]{biblatex} %Sets up the referencing system, standard numeric ordering, prints the page numbers refereced as a back reference, prints all names, makes dates iso dates
+\usepackage[style=numeric-comp,backend=biber,sorting=none,backref=true,maxnames=99,alldates=iso8601,refsection=chapter]{biblatex}
 \addbibresource{library.bib} %This is how you add your bib files
 \usepackage[english]{isodate}%Convert any date formats to ISO style
 \usepackage{listing}%Package for listing sourcecode with syntax highlighting
@@ -64,7 +65,7 @@
     pdfmenubar=true,
     pdffitwindow=false,
     pdfstartview={FitV},
-    pdftitle={Integrating sphere-based total diffuse reflectance spectroscopy for the quantification of hemoglobin in skin},
+    pdftitle={Integrating sphere-based spectrally constrained total diffuse reflectance for in vivo quantification of hemoglobin in skin},
     pdfauthor={Diana L. Glennie},
     pdfsubject={Subject},
     pdfkeywords={keyword1} {key2} {key3},
@@ -77,7 +78,7 @@
 }
 %\graphicspath{{graphics/}} %Uncomment if you want to hide all figure files in a graphics/ subdirectory
 
-\title{Integrating sphere-based total diffuse reflectance spectroscopy for the quantification of hemoglobin in skin}
+\title{Integrating sphere-based spectrally constrained total diffuse reflectance for in vivo quantification of hemoglobin in skin}
 \author{Diana L. Glennie}
 \date{\today}
 
@@ -94,7 +95,7 @@
     \topskip0pt
     \vspace*{\fill}
     \begin{center}{\Large
-    \uppercase{Thesis Example}}
+    \uppercase{In vivo quantification of hemoglobin in skin}}
     \end{center}
     \vspace*{\fill}
     \setcounter{page}{0} %This page needs to be "unnumbered" so we give it number zero
@@ -106,7 +107,7 @@
 \pagenumbering{roman}
 \centering
 \vspace*{\fill} %This makes text vertically centered
-{\Large \uppercase{Integrating sphere-based total diffuse reflectance spectroscopy for the quantification of hemoglobin in skin}\\
+{\Large \uppercase{Integrating sphere-based spectrally constrained total diffuse reflectance for in vivo quantification of hemoglobin in skin}\\
 \vfill
 By DIANA L.\ GLENNIE, B.\ SC., M.\ SC.\\}
 \vfill
@@ -117,7 +118,7 @@ McMaster University \textcopyright{} Copyright by Diana L.\ Glennie, November 20
 \end{titlepage}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 {\noindent McMaster University DOCTOR OF PHILOSOPHY (2014) Hamilton, Ontario (Medical Physics)\\
-TITLE: Integrating sphere-based total diffuse reflectance spectroscopy for the quantification of hemoglobin in skin\\
+TITLE: Integrating sphere-based spectrally constrained total diffuse reflectance for in vivo quantification of hemoglobin in skin\\
 AUTHOR: Diana L. Glennie, B.Sc., M. Sc. (McMaster University)\\
 SUPERVISOR: Professor Thomas J. Farrell\\
 NUMBER OF PAGES: ix,~\pageref{LastPage}}
@@ -125,12 +126,12 @@ NUMBER OF PAGES: ix,~\pageref{LastPage}}
     \begin{abstract}
         \thispagestyle{plain}
         \setcounter{page}{3}
-            This is where the abstract proper goes. The page number of this page may need be abused to number correctly.
+            An abstract of not more than 300 words must be included and will indicate the major emphasis of the thesis, new discoveries, and its contribution to knowledge. The style of abstract varies somewhat from discipline to discipline; the student should follow an appropriate style.
     \end{abstract}
 
     \renewcommand{\abstractname}{Acknowledgements}
     \begin{abstract} \setcounter{page}{4} \thispagestyle{plain}
-        Here, we abuse the abstract command to create an acknowledgements. The page number of this page may need be abused to number correctly.
+        This is where I get all mushy and thank the people who've helped me get to where I am today.
     \end{abstract}
     
     \setcounter{secnumdepth}{3} %Make TOC include subsubsections
@@ -140,10 +141,10 @@ NUMBER OF PAGES: ix,~\pageref{LastPage}}
 
     \renewcommand{\abstractname}{Declaration of Academic Achievement}
     \begin{abstract} \thispagestyle{plain} \setcounter{page}{9} %This page number needs to be manually set properly after the tableofcontents is generated
-        Here, we abuse the abstract command to create the declaration of academic achievement. The page number of this page will need be abused to number correctly.
+        The work presented here is the result of research performed by myself during the years 2009--2014. Results that have substantial contributions from other authors are clearly prefaced and the contributions of those authors are indicated.
     \end{abstract}
     
-    \listoftodos %Uncomment this to generate a list of todos (useful for keeping track of things)
+    %\listoftodos %Uncomment this to generate a list of todos (useful for keeping track of things)
     \pagenumbering{arabic} %Reset page numbering
 
 %Fix all the header/footer according to McMaster Requirements
@@ -161,13 +162,28 @@ NUMBER OF PAGES: ix,~\pageref{LastPage}}
 
 \chapter{Introduction}
 \include{introduction}
+%\printbibliography{}
+\printbibliography[heading=subbibliography]
 
-\chapter{Chapter 2}
-%\include{chapter2}
+\chapter{Paper I - The total diffuse reflectance spectroscopy system}
+\include{p1-system}
+\printbibliography[heading=subbibliography]
+
+\chapter{Paper II - The spectrally-constrained model}
+%\include{chapter3}
+
+\chapter{Paper III - Application in radiation therapy}
+%\include{chapter4}\usepackage[style=numeric-comp,backend=biber,sorting=none,backref=true,maxnames=99,alldates=iso8601,refsection=chapter]{biblatex}
+
+\chapter{Paper IV - TLD reproducibility}
+%\include{chapter5}
+
+\chapter{Conclusions}
+%\include{chapter6}
 
 %\nomenclature{EXPL}{Example Definition of Abbreviation}%
 
-\printbibliography
+%\printbibliography{}
 %\printindex
 
 \appendix
