@@ -1,22 +1,13 @@
-\section{Preamble}
-text
+\section*{Preamble}
+rationale, overview, co-authorship statement, ethics approval (if applicable)
 
-\section{Contents}
-
-\bigskip
-\bigskip
+\section*{Contents}
 
 \begin{center}
 
 \textbf{Inexpensive diffuse reflectance spectroscopy system for measuring changes in tissue optical properties}
 
-\bigskip
-\bigskip
-
 Diana L. Glennie, Joseph E. Hayward, Daniel E. McKee, and Thomas J. Farrell
-
-\bigskip
-\bigskip
 
 \textit{Department of Medical Physics and Applied Radiation Sciences, McMaster University, 1280 Main Street West, Hamilton, Ontario, L8S 1A8}
 
@@ -26,14 +17,11 @@ Diana L. Glennie, Joseph E. Hayward, Daniel E. McKee, and Thomas J. Farrell
 
 \end{center}
 
-\bigskip
-\bigskip
-
 \noindent Journal of Biomedical Optics \textbf{19}(10), 105005 (October 2014).
 
 \noindent \url{http://dx.doi.org/10.1117/1.JBO.19.10.105005}
 
-\subsection*{Abstract}
+\section*{Abstract}
 The measurement of changes in blood volume in tissue is important for monitoring the effects of a wide range of therapeutic interventions, from radiation therapy to skin-flap transplants. Many systems available for purchase are either expensive or difficult to use, limiting their utility in the clinical setting. A low-cost system, capable of measuring changes in tissue blood volume via diffuse reflectance spectroscopy is presented. The system consists of an integrating sphere coupled via optical fibers to a broadband light source and a spectrometer. Validation data are presented to illustrate the accuracy and reproducibility of the system. The validity and utility of this \emph{in vivo} system were demonstrated in a skin blanching/reddening experiment using epinephrine and lidocaine, and in a study measuring the severity of radiation-induced erythema during radiation therapy.
 
 \bigskip
@@ -41,7 +29,7 @@ The measurement of changes in blood volume in tissue is important for monitoring
 
 \noindent \textcopyright 2014 Society of Photo-Optical Instrumentation Engineers (SPIE)
 
-\subsection{Introduction}
+\section{Introduction}
 The ability to quantify changes in the concentration of chromophores in the skin (particularly oxy- and deoxy-hemoglobin) in vivo and in real time has many applications in healthcare. For example, a complication of radiation therapy is radiation-induced erythema, which, if not monitored closely, can progress to painful moist desquamation.\cite{Hopewell1990,Russell1994,Nystrom2004,Fitzgerald2008} In photodynamic therapy, tissue oxygenation can be used to indicate treatment efficacy\cite{Woodhams2007} since oxygen is required for the activation of the cytotoxic photochemicals.\cite{Patterson1989a,Wilson2008} Finally, in plastic surgery, proper blood flow is integral for the success of free tissue transplants and is used to indicate whether or not a return to the operating room is necessary.\cite{Steele2011}
 
 Several methods have been validated for measuring skin redness. In increasing complexity and accuracy they are visual assessment (with or without a color chart), colorimetry/photography, and spectroscopy.\cite{Agache2004} Although the visual assessment technique,\cite{Trotti2003} is the most common, it is qualitative in nature. Due to its subjective nature and the nonlinearity of human vision, it is highly prone to interobserver as well as intraobserver variations.\cite{Bodekaer2013} The subjectivity of this method can be minimized by the introduction of color charts; however, a very large number of color shades would be required to best account for the effect of pigmentation on the perceived redness. Despite these difficulties, visual assessment remains the gold standard for measuring skin redness.\cite{Basketter1997,Wengstrom2004}
@@ -52,7 +40,7 @@ Spectroscopy-based methods, such as reflectance spectroscopy and hyperspectral i
 
 In order to facilitate the translation of spectroscopy systems from the research laboratory to the routine clinical setting for the use on human skin in vivo, an economic integrating sphere-based diffuse reflectance spectroscopy (DRS) unit was developed and characterized. The system designs and specifications will be outlined. To illustrate the validity and utility of the assembled system, the results of two ongoing clinical studies measuring erythema under different conditions will be presented.
 
-\subsection{Design of the Total DRS System}
+\section{Design of the Total DRS System}
 Simply, the total DRS system consists of a white light source coupled to an integrating sphere via an optical fiber. A second detection optical fiber directs the reflected light to a spectrometer. The spectrometer is controlled by a computer on which the required processing software was installed. A schematic of the system design is shown in Figure~\ref{fig:p1-sys_diagram}. A detailed description of the selection of each component is presented below.
 
 \begin{figure}
@@ -60,17 +48,17 @@ Simply, the total DRS system consists of a white light source coupled to an inte
 	\caption[System schematic]{\label{fig:p1-sys_diagram}A schematic of the measurement system (not to scale). The light source is connected to the side port of the integrating sphere. Light collected through the overhead port is detected by the spectrometer and processed by the laptop.}
 \end{figure}
 
-\subsubsection{Light Source}
+\subsection{Light Source}
 Oxy- and deoxy-hemoglobin have spectral absorption features within the visible light range.\cite{Young1997,Lister2012} Therefore, a light source encompassing this range, without any narrow bandwidth spectral excitation features, is required. In addition, a stable output over the measurement period (minutes to hours) is required for proper reflectance calculation. An Oriel 77501 Radiometric Fiber Optic Source (Newport, Irvine, California) was chosen with a 100 W quartz tungsten halogen lamp to produce a highly stable output within the visible-NIR wavelength range that can be easily coupled to an optical fiber. It also has an adjustable iris to allow for output optimization.
 
-\subsubsection{Spectrometer and Optical Fibers}
+\subsection{Spectrometer and Optical Fibers}
 The spectrometer must be capable of detecting light with high sensitivity across the visible spectrum. It must also have sufficient spectral resolution to allow for the differentiation between the spectral features of oxy- and deoxy-hemoglobin (<13 nm for oxy-hemoglobin). An ideal spectrometer would also be small for ease of portability.
 
 The S2000 Miniature Fiber Optic Spectrometer from Ocean Optics (Dunedin, Florida) was chosen for this system. It has a wavelength range of 340 to 1000 nm and a dynamic range of 2000 for a single scan. The 2048-element linear CCD-array results in a pixel width of approximately 0.35 nm and the integration time can range from 3 ms to 60 s. Its small size (<150 mm cube) allows for easy transportation between clinical sites.
 
 The fiber optic connector specifications for the Ocean Optics spectrometer are for an SMA 905 to single-strand 0.22 NA optical fiber. The optical fiber acts in place of a slit in the spectrometer’s hardware. A relatively large fiber core of 400 \si{\um} was chosen to maximize light collection. This resulted in spectral resolution of 10 nm as determined from the measurement of a mercury–argon calibration source (HG-1 Mercury Argon Calibration Source, Ocean Optics, Dunedin, Florida). The effect of this spectral resolution on the reflectance spectrum analysis is described in Section~\ref{sec:ei_analysis}. The final criterion for the fibers was high transmission in the visible spectrum. Two such fibers, with a wavelength range between 400 and 2200 nm, were purchased from Thorlabs (Newton, New Jersey).
 
-\subsubsection{Integrating Sphere}
+\subsection{Integrating Sphere}
 The size of the integrating sphere is dictated by its use to measure light reflectance from human skin. As such, the integrating sphere should be relatively small (on the order of 5 to 10 cm in diameter) so that it can fit onto the various curves of the human body. A small sphere would also be easier to maneuver and keep stationary, resulting in more stable measurements.
 
 The size of the measurement port of the sphere should be sufficiently large that local inhomogeneities in the measurement area (such as small freckles or hairs) do not overwhelm the result, but should result in the sphere’s port fraction (the ratio of the total port area to the total internal surface area of the sphere) falling between 2\% and 5\%.\cite{Hanssen2002} For the range of sphere sizes suggested above, the port diameter would fall somewhere within 1.5 to 5 cm.
@@ -84,7 +72,7 @@ The integrating sphere was made from a cube of Spectralon\textregistered (Labsph
 	\caption[Cross-sectional diagram of the integrating sphere]{\label{fig:p1-intsphere_schematic}A cross-sectional diagram of the integrating sphere. The block of Spectralon\textregistered used to make the sphere is bisected before processing and then reattached to form the sphere.}
 \end{figure}
 
-\subsubsection{Implementation Costs}
+\subsection{Implementation Costs}
 The specifications for each individual component have some flexibility; therefore, a DRS system can be built within a wide range of costs while still achieving the same measurement results.
 
 In choosing the light source, it is only important that it covers the desired wavelength range and be stable to within 1\%. Although a uniform spectral output is ideal to keep the signal uncertainty relatively constant, it is not necessary. A quartz tungsten halogen lamp provides smooth spectral features and high output powers; however, a less expensive alternative would be a white LED. These provide excellent illumination and are relatively stable, although they do have an emission peak in the blue region (\textasciitilde465 nm).
@@ -114,12 +102,12 @@ A list of itemized expenses is shown in Table 1, assuming new materials were req
 	\end{tabular}
 \end{table}
 
-\subsection{Procedure and Performance}
+\section{Procedure and Performance}
 
-\subsubsection{Integrating Sphere Configuration}
+\subsection{Integrating Sphere Configuration}
 The optical fibers are connected to the integrating sphere following a d/0\degree (diffuse illumination/direct detection) geometry such that the input light is first incident on the sphere wall before encountering the tissue surface and the output fiber is directly across from the measurement port (as shown in Figure~\ref{fig:p1-sys_diagram}. In this geometry, the sample is more uniformly illuminated compared with a 0\degree/d geometry due to the multiple reflections of the light prior to exiting the sphere at the tissue. In addition, since the illumination is diffuse rather than normally incident, the penetration of light is more superficial due to the oblique entrance angle (average 55\degree). Thus, a greater percentage of spectroscopic information originates from the upper layers of skin where the chromophores of interest are located. Due to the small size of this integrating sphere, a baffle was not used. The geometry and the detector fiber acceptance angle (0.22 NA) allowed only light that was specularly or diffusely reflected from the tissue surface to be collected.
 
-\subsubsection{Calculating Spectral Reflectance}
+\subsection{Calculating Spectral Reflectance}
 The spectral reflectance of a tissue sample was normalized by dividing the spectral count rate with the detection port on the tissue, $S_t(\lambda)$, by the spectral count rate from a highly reflecting standard, $S_{norm}(\lambda)$. Both of these were adjusted by subtracting the background signal rate, $S_{bg}(\lambda)$, so that the modified total diffuse reflectance, R*m(?), is given by
 
 \begin{equation}
@@ -132,10 +120,10 @@ A 99\% reflectance standard (SRS-99-010, Labsphere, North Sutton, New Hampshire)
 
 For each spectral count rate measurement, the integration time was set such that the maximum intensity was approximately 90\% of the dynamic range. This allowed for optimal precision while ensuring that the signal would not saturate. Five measurements were averaged to further reduce the noise. The averaged measurements were converted into a count rate by dividing by the integration times.
 
-\subsubsection{Sphere Preparation}
+\subsection{Sphere Preparation}
 The measurement port of the integrating sphere was covered with a sheet of occlusive dressing (Tegaderm\texttrademark film, 3M Health Care, St. Paul, Minnesota) in order to prevent dirt and other material from contaminating the inside of the sphere. A new sheet was applied for each patient before any measurements to ensure sterility. The dressing was left on for the normalization and background measurements and, therefore, did not modify the resulting reflectance. Reflectance measurements were performed on calibrated diffuse reflectance standards ranging from 2\% to 99\% (RSS-08-010, Labsphere, North Sutton, New Hampshire) with the dressing in place and removed. Both sets of measurements showed no measurable difference.
 
-\subsubsection{Correcting for Single Beam Substitution Error}
+\subsection{Correcting for Single Beam Substitution Error}
 Single beam integrating spheres used for reflectance spectroscopy suffer from single beam substitution error\cite{Springsteen1998,Labspherec} due to the decrease of the total flux within the sphere when the normalization plate is replaced with the sample. This can be corrected using Equation~\ref{eq:sbse}. The parameters (a, b, c), as a function of wavelength, were determined empirically by measuring the calibrated reflectance standards described in the previous section and developing a relationship between the measured and calibrated reflectances (represented by $R_m^\ast$ and $R_m$, respectively), based on the fraction of reflected light. If reflectance standards are not available, Intralipid\texttrademark (Baxter, Deerfield, Illinois) and India ink liquid phantoms can be used as they have well-characterized extinction coefficients.\cite{Flock1992,Madsen1992}
 
 \begin{equation}
@@ -155,21 +143,21 @@ These data were fit using a nonlinear least-squares algorithm at each of the wav
 	\caption[Measured and calibrated reflectance spectra]{\label{fig:p1-colored_refl}The measured (symbols) and calibrated (lines) reflectance spectra for a set of four colored diffuse reflectance standards: red (CIRCLE), yellow ($\square$), green (TRIANGLE), and blue ($\diamond$). Correction for the single-beam substitution error brought the measured reflectance values to within 0.01 of the calibrated reflectance specified by the supplier.}
 \end{figure}
 
-\subsubsection{Reflectance Measurement Reproducibility}
+\subsection{Reflectance Measurement Reproducibility}
 The reproducibility of the system was tested using the green reflectance standard (SCS-GN-010) because it had reflectance similar to human skin and spectral features in the same region as hemoglobin. Reflectance was measured every day for 30 days and the standard deviation across the 500 to 700 nm spectral region never exceeded 1\%. As expected, it varied with the spectral reflectance of the reflectance standard (i.e., the uncertainty was lower when the reflectance/signal was higher). Reproducibility measurements were also performed on human skin and they had a similar result.
 
-\subsection{Experimental Validation}
+\section{Experimental Validation}
 
-\subsubsection{Study Overviews}
+\subsection{Study Overviews}
 In order to demonstrate the use and validity of the DRS system, sample data from two ongoing erythema studies are presented. In the first study, erythema and skin blanching were induced via subcutaneous injection of lidocaine (a vasodilator and anesthetic) with or without epinephrine (a vasoconstrictor) over the deltoid muscles of volunteers’ upper arms. The aim of this study was to determine the time to maximal effect of injected epinephrine. In the second study, serial skin reflectance measurements were taken on head and neck cancer patients undergoing intensity-modulated radiation therapy (IMRT). The goal of this study was earlier detection of radiation-induced erythema compared with visual assessment methods. Both studies received Hamilton Health Sciences Research Ethics approval.
 
-\subsubsection{Erythema Index Analysis}
+\subsection{Erythema Index Analysis}
 \label{sec:ei_analysis}
 The measured reflectance spectra were processed using the Dawson erythema index (EI).\cite{Dawson1980} This model was chosen because of its wide acceptance and use (over 280 citations to date),\cite{Riordan2001} as well as its straight-forward calculation method. Briefly, the EI is the area under the curve of the log of the inverse reflectance spectrum between 510 and 610 nm (encompassing the absorption features of oxy- and deoxy-hemoglobin). The influence of melanin in the EI can be approximately corrected using reflectance data between 650 and 700 nm (EI). For serial measurements on an individual, a relative erythema index (EI\textsubscript{r}) can also be calculated. Simply, a baseline EI\textsubscript{c} is obtained either at time zero or at a nearby reference location. This is subtracted from EI\textsubscript{c} values measured at later time points such that, in the absence of changes in hemoglobin, EI\textsubscript{r} would be zero.
 
 The 10 nm FWHM spectral resolution of the system has the effect of broadening spectral features in the measured reflectance. Although this would be problematic for narrow features, the absorption features in the hemoglobin spectra are very broad and were not strongly affected. To verify the effect on the EI, spectra derived from the literature\cite{Jacques1998} were convolved with a 10 nm FWHM Gaussian function and the EI calculated before and after. Small differences in the calculated EI were noted (data not shown), however changes in EI with respect to an increase or decrease in hemoglobin were insensitive to the spectrometer’s spectral resolution.
 
-\subsubsection{Study Results}
+\subsection{Study Results}
 In the first study, the reflectance was measured serially for 2 h following the injection of lidocaine (with or without epinephrine) and the measurements were processed to calculate the EIr as a function of time. A time course for one volunteer is shown in Figure~\ref{fig:p1-lido_epi} along with the reflectance spectra at specific time points. For both injections, there was a rapid increase in the EI\textsubscript{r} indicating an increase in the hemoglobin content. The combined lidocaine and epinephrine injection then decreased to a minimum EI\textsubscript{r} of approximately -16 at the 22 min mark indicating a reduction in hemoglobin content. An analysis of the EI\textsubscript{r} for all subjects indicated that the maximum epinephrine-induced blanching occurred approximately 25 min following injection, after which surgical incision may commence.\cite{McKee2013}
 
 \begin{figure}
@@ -184,12 +172,12 @@ In the second study, the reflectance was measured daily over the course of the p
 	\caption[Corrected erythema index for IMRT cancer patient]{\label{fig:p1-cor_ei}Corrected erythema index for a head and neck IMRT cancer patient. Daily measurements were taken over the course of treatment. Erythema was not visually noted until day 18.}
 \end{figure}
 
-\subsection{Discussion}
+\section{Discussion}
 This paper illustrates two clinical applications of a DRS system. These results demonstrate that a low-cost spectroscopy system is capable of measuring spectral changes in reflectance due to changes in the concentration of hemoglobin. These changes were quantified using the Dawson EI. The system is easy to operate and yields valuable clinical data with little training required. The system described here may be found to have a wide range of clinical assessment roles, which would make it an even more useful tool for health care practitioners. However, since the system collects a full spectrum, it is capable of generating much more valuable information than just a single EI value. For example, correcting for background chromophores is only approximate and any changes over the measurement period could register as incorrect increases or decreases in skin redness. An alternative modeling approach using a spectrally constrained diffuse reflectance model to fit the measured reflectance spectrum with concentrations of the major tissue chromophores may be advantageous. This will allow for the detection of skin color changes in reference to their responsible chromophore, but would require the measured spectrum to be extremely accurate and precise.
 
 One of the limitations of this spectroscopy system is that the signal is normalized using a highly scattering Spectralon\textregistered standard. In comparison, human skin is much less scattering and therefore the true reflectance is under-represented due to scattering losses. These scattering losses are not large but, since they vary with the tissue optical properties, they would need to be accounted for in a spectrally dependent model.
 
 This paper presents a low-cost, user-friendly DRS system for measurement of changes in skin hemoglobin concentration. The performance of the system was characterized in terms of wavelength accuracy and measurement stability, uncertainty, and reproducibility. The validity and utility of the system were demonstrated through a skin reddening/blanching experiment and a radiation-induced erythema study, followed by analysis with a simple erythema model. Further uses of the system have yet to be investigated.
 
-\subsection*{Acknowledgments}
+\section*{Acknowledgments}
 The authors would like to thank Kevin R. Diamond and Gabriel A. Devenyi for their assistance in the preparation of this paper. This work was financially supported by the Natural Sciences and Engineering Research Council of Canada.

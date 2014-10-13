@@ -1,5 +1,5 @@
 \section{Motivation}
-The ability to measure changes in the hemoglobin concentration in skin will enable more personalized patient care which, in turn, will lead to an increase in treatment success rates and a decrease in per-patient costs.
+The ability to measure changes in the hemoglobin concentration in skin will enable more personalized patient care which, in turn, may lead to an increase in treatment success rates and a decrease in per-patient costs.
 
 For example, in radiation therapy, a common side effect is a skin-reddening reaction known as erythema, or radiation dermatitis.\cite{McQuestion2006} Depending on the severity of the reaction, erythema can be quite painful and may even prevent the completion of the radiation treatment schedule, thereby reducing the overall treatment efficacy. Unfortunately, since it is a deterministic effect,\cite{Hall2000} with a varying threshold dose and a spectrum of reactions, erythema is impossible to reliably predict in advance. Instead, patients’ responses are monitored by the therapy team over the course of treatment. The current method for monitoring erythema is by visual assessment (VA). VA uses a pre-determined scale to classify the current condition of the skin. If there are too few divisions on the scale (four or less), there is not a sufficient amount of information regarding the patient’s progress from the erythema stage to the next stage of moist desquamation. If there are more than four divisions on the scale, it is difficult to eliminate, or even minimize, the inter- and intra-observer variation, making the results unreliable at best, and preventing any comparison between patients. The implementation of an objective method for measuring skin redness would allow for the treatment team to better manage the reaction, thus improving the treatment’s success rate and the patient’s quality of life.
 
@@ -83,14 +83,16 @@ The total diffuse reflectance represents the fraction of incident light fluence 
 
 \subsection{Spatially-resolved diffuse reflectance}
 \label{sec:spat_diff_refl}
-The spatially-resolved diffuse reflectance is the fraction of the incident light remitted at a set of radial distances from the incident light source. It is collected by detection fibers positioned at many (at least two) distances from the source fiber.\cite{Kim2011} To maintain accurate positioning, the source and detection fibers are usually bundled together in a single probe. To improve the signal-to-noise ratio, several probes are used at greater distances (see Figure~\ref{fig:intro-srdr}).
+The spatially-resolved diffuse reflectance is the fraction of the incident light remitted at a set of radial distances from the incident light source. It can be collected with a video system or by detection fibers positioned at many (at least two) distances from the source fiber.\cite{Kim2011} To maintain accurate positioning, the source and detection fibers are usually bundled together in a single probe. To improve the signal-to-noise ratio, several probes are used at greater distances (see Figure~\ref{fig:intro-srdr}).
 
 \begin{figure}
 	\centering \includegraphics[width=0.5\textwidth]{figures/intro-srdr.png}
 	\caption[Probe for spatially-resolved diffuse reflectance]{\label{fig:intro-srdr}A diagram representing the configuration of the optical fibers in the probe. Light enters through fiber “A” (dark grey) and is detected by additional fibers that are placed set distances away (white).}
 \end{figure}
 
-Both the absorption and reduced scattering coefficients can be determined with this method. The first step is to determine the effective attenuation coefficient, which is approximated by the terminal slope of the curve of $\ln[r^m R_d(r)] $ as a function of the radial distance. $R_d(r)$ is the measured diffuse reflectance at the radial distance $r$, and $m$ is an empirically determined constant, generally cited as $2$ when diffusion theory applies. After the effective attenuation coefficient has been determined, the measurements from all of the detector probes can be collected to produce the total diffuse reflectance which yields the albedo as described in Section~\ref{sec:total_diff_refl}). Together, these two quantities (the effective attenuation coefficient and the albedo) can be combined to obtain the absorption and reduced scattering coefficient.
+Both the absorption and reduced scattering coefficients can be determined from this collected data. One method of interpreting the spatially-resolved results is to first determine the effective attenuation coefficient, which is approximated by the terminal slope of the curve of $\ln[r^m R_d(r)] $ as a function of the radial distance. $R_d(r)$ is the measured diffuse reflectance at the radial distance $r$, and $m$ is an empirically determined constant, generally cited as $2$ when diffusion theory applies. After the effective attenuation coefficient has been determined, the measurements from all of the detector probes can be collected to produce the total diffuse reflectance which yields the albedo as described in Section~\ref{sec:total_diff_refl}). Together, these two quantities (the effective attenuation coefficient and the albedo) can be combined to obtain the absorption and reduced scattering coefficient.
+
+The spatially-resolved data can also be analyzed with a nonlinear fit to a reflectance equation derived from diffusion theory. The absorption and reduced scattering coefficients would act as input parameters for the equation. It is also possible to compare the obtained results to a databased of curves derived from Monte Carlo simulations.
 
 \subsection{Spectrally-constrained diffuse reflectance}
 \label{spec_diff_refl}
@@ -111,6 +113,9 @@ The reduced scattering coefficient for human skin has been well-characterized an
 \end{equation}
 
 As a result, the scaling factor ($a$) and the exponential ($b$) can be included as fitting parameters in the forward model.
+
+\subsection{Commercially available systems}
+Review currently available systems, their approaches, and approximate costs.
 
 \section{Integrating sphere theory}
 \label{sec:is_theory}
@@ -167,7 +172,7 @@ Within the visible spectrum (400-750 nm), the dominant chromophores found in ski
 
 \begin{figure}
 	\centering \includegraphics[width=0.8\textwidth]{figures/intro-skin_chromophores.png}
-	\caption[The major chromophores of skin within the visible light spectrum]{\label{fig:intro-skin_chromophores}The major chromophores found in skin within the visible light spectrum are oxy- and deoxy-hemoglobin and melanin.}
+	\caption[The major chromophores of skin within the visible light spectrum]{\label{fig:intro-skin_chromophores}The major chromophores found in skin within the visible light spectrum are oxy- and deoxy-hemoglobin and melanin. Data shown are from Jacques, XXXX.}
 \end{figure}
 
 Perfusion is the process of delivering blood to capillaries, such as those in the dermal layer of the skin. Changes to the vasculature impact the blood flow within the skin that, in turn, changes the physical appearance at the surface. When the blood vessels narrow, less blood is present in the dermal layer of the skin. This process is known as vasoconstriction and results in a perceived blanching of the skin. When the blood vessels expand in a process known as vasodilation, more blood is present in the skin, which appears redder to the human eye.
