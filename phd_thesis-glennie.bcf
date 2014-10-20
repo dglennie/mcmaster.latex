@@ -2005,48 +2005,49 @@
     <bcf:datasource type="file" datatype="bibtex">library.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="2">
-    <bcf:citekey order="1">Hopewell1990</bcf:citekey>
-    <bcf:citekey order="1">Russell1994</bcf:citekey>
-    <bcf:citekey order="1">Nystrom2004</bcf:citekey>
-    <bcf:citekey order="1">Fitzgerald2008</bcf:citekey>
-    <bcf:citekey order="2">Woodhams2007</bcf:citekey>
-    <bcf:citekey order="3">Patterson1989a</bcf:citekey>
-    <bcf:citekey order="3">Wilson2008</bcf:citekey>
-    <bcf:citekey order="4">Steele2011</bcf:citekey>
-    <bcf:citekey order="5">Agache2004</bcf:citekey>
-    <bcf:citekey order="6">Trotti2003</bcf:citekey>
-    <bcf:citekey order="7">Bodekaer2013</bcf:citekey>
-    <bcf:citekey order="8">Basketter1997</bcf:citekey>
-    <bcf:citekey order="8">Wengstrom2004</bcf:citekey>
-    <bcf:citekey order="9">CI2012</bcf:citekey>
-    <bcf:citekey order="10">Jung2012</bcf:citekey>
-    <bcf:citekey order="11">Kollias2002</bcf:citekey>
-    <bcf:citekey order="11">Canning2009</bcf:citekey>
-    <bcf:citekey order="11">Nishidate2011</bcf:citekey>
-    <bcf:citekey order="11">Setaro2002</bcf:citekey>
-    <bcf:citekey order="12">Zhang2005</bcf:citekey>
-    <bcf:citekey order="12">Stamatas2008</bcf:citekey>
-    <bcf:citekey order="12">Kollias2010</bcf:citekey>
-    <bcf:citekey order="12">Yudovsky2010</bcf:citekey>
-    <bcf:citekey order="12">Chin2012</bcf:citekey>
-    <bcf:citekey order="13">Fox2012</bcf:citekey>
-    <bcf:citekey order="14">Young1997</bcf:citekey>
-    <bcf:citekey order="14">Lister2012</bcf:citekey>
-    <bcf:citekey order="15">Hanssen2002</bcf:citekey>
-    <bcf:citekey order="16">Labsphereb</bcf:citekey>
-    <bcf:citekey order="16">Labspherea</bcf:citekey>
-    <bcf:citekey order="16">Labsphere</bcf:citekey>
-    <bcf:citekey order="17">Glennie2009</bcf:citekey>
-    <bcf:citekey order="18">Sumriddetchkajorn2012</bcf:citekey>
-    <bcf:citekey order="19">Springsteen1998</bcf:citekey>
-    <bcf:citekey order="19">Labspherec</bcf:citekey>
-    <bcf:citekey order="20">Flock1992</bcf:citekey>
-    <bcf:citekey order="20">Madsen1992</bcf:citekey>
-    <bcf:citekey order="21">Dawson1980</bcf:citekey>
-    <bcf:citekey order="22">Riordan2001</bcf:citekey>
-    <bcf:citekey order="23">Jacques1998</bcf:citekey>
-    <bcf:citekey order="24">McKee2013</bcf:citekey>
-    <bcf:citekey order="25">Fullerton1996</bcf:citekey>
+    <bcf:citekey order="1">Moscu2010</bcf:citekey>
+    <bcf:citekey order="2">Hopewell1990</bcf:citekey>
+    <bcf:citekey order="2">Russell1994</bcf:citekey>
+    <bcf:citekey order="2">Nystrom2004</bcf:citekey>
+    <bcf:citekey order="2">Fitzgerald2008</bcf:citekey>
+    <bcf:citekey order="3">Woodhams2007</bcf:citekey>
+    <bcf:citekey order="4">Patterson1989a</bcf:citekey>
+    <bcf:citekey order="4">Wilson2008</bcf:citekey>
+    <bcf:citekey order="5">Steele2011</bcf:citekey>
+    <bcf:citekey order="6">Agache2004</bcf:citekey>
+    <bcf:citekey order="7">Trotti2003</bcf:citekey>
+    <bcf:citekey order="8">Bodekaer2013</bcf:citekey>
+    <bcf:citekey order="9">Basketter1997</bcf:citekey>
+    <bcf:citekey order="9">Wengstrom2004</bcf:citekey>
+    <bcf:citekey order="10">CI2012</bcf:citekey>
+    <bcf:citekey order="11">Jung2012</bcf:citekey>
+    <bcf:citekey order="12">Kollias2002</bcf:citekey>
+    <bcf:citekey order="12">Canning2009</bcf:citekey>
+    <bcf:citekey order="12">Nishidate2011</bcf:citekey>
+    <bcf:citekey order="12">Setaro2002</bcf:citekey>
+    <bcf:citekey order="13">Zhang2005</bcf:citekey>
+    <bcf:citekey order="13">Stamatas2008</bcf:citekey>
+    <bcf:citekey order="13">Kollias2010</bcf:citekey>
+    <bcf:citekey order="13">Yudovsky2010</bcf:citekey>
+    <bcf:citekey order="13">Chin2012</bcf:citekey>
+    <bcf:citekey order="14">Fox2012</bcf:citekey>
+    <bcf:citekey order="15">Young1997</bcf:citekey>
+    <bcf:citekey order="15">Lister2012</bcf:citekey>
+    <bcf:citekey order="16">Hanssen2002</bcf:citekey>
+    <bcf:citekey order="17">Labsphereb</bcf:citekey>
+    <bcf:citekey order="17">Labspherea</bcf:citekey>
+    <bcf:citekey order="17">Labsphere</bcf:citekey>
+    <bcf:citekey order="18">Glennie2009</bcf:citekey>
+    <bcf:citekey order="19">Sumriddetchkajorn2012</bcf:citekey>
+    <bcf:citekey order="20">Springsteen1998</bcf:citekey>
+    <bcf:citekey order="20">Labspherec</bcf:citekey>
+    <bcf:citekey order="21">Flock1992</bcf:citekey>
+    <bcf:citekey order="21">Madsen1992</bcf:citekey>
+    <bcf:citekey order="22">Dawson1980</bcf:citekey>
+    <bcf:citekey order="23">Riordan2001</bcf:citekey>
+    <bcf:citekey order="24">Jacques1998</bcf:citekey>
+    <bcf:citekey order="25">McKee2013</bcf:citekey>
+    <bcf:citekey order="26">Fullerton1996</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2058,8 +2059,21 @@
   <bcf:section number="3">
     <bcf:citekey order="1">Larrabee1987</bcf:citekey>
     <bcf:citekey order="2">Dawson1980</bcf:citekey>
-    <bcf:citekey order="3">Larrabee1987</bcf:citekey>
-    <bcf:citekey order="4">Dawson1980</bcf:citekey>
+    <bcf:citekey order="3">Knize2007</bcf:citekey>
+    <bcf:citekey order="3">Kryger2007</bcf:citekey>
+    <bcf:citekey order="4">Larrabee1987</bcf:citekey>
+    <bcf:citekey order="5">Dawson1980</bcf:citekey>
+    <bcf:citekey order="6">Larrabee1987</bcf:citekey>
+    <bcf:citekey order="7">Dunlevy1996</bcf:citekey>
+    <bcf:citekey order="7">OMalley1995</bcf:citekey>
+    <bcf:citekey order="8">Dawson1980</bcf:citekey>
+    <bcf:citekey order="8">Wilson2008</bcf:citekey>
+    <bcf:citekey order="9">Najefi2010</bcf:citekey>
+    <bcf:citekey order="9">Stelle2011</bcf:citekey>
+    <bcf:citekey order="10">Higgins</bcf:citekey>
+    <bcf:citekey order="10">Lalonde2011</bcf:citekey>
+    <bcf:citekey order="11">Lee1050</bcf:citekey>
+    <bcf:citekey order="12">Gibson1990</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2069,6 +2083,46 @@
     <bcf:datasource type="file" datatype="bibtex">library.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="4">
+    <bcf:citekey order="1">Farrell2004</bcf:citekey>
+    <bcf:citekey order="1">Fitzgerald2008</bcf:citekey>
+    <bcf:citekey order="1">Russell1994</bcf:citekey>
+    <bcf:citekey order="1">Wengstrom2004</bcf:citekey>
+    <bcf:citekey order="2">Steele2011</bcf:citekey>
+    <bcf:citekey order="3">Wengstrom2004</bcf:citekey>
+    <bcf:citekey order="3">CTCAE403</bcf:citekey>
+    <bcf:citekey order="4">Diffey1991</bcf:citekey>
+    <bcf:citekey order="5">Kim2011</bcf:citekey>
+    <bcf:citekey order="6">Kim2011</bcf:citekey>
+    <bcf:citekey order="7">Marchesini1991</bcf:citekey>
+    <bcf:citekey order="7">Zhang2012</bcf:citekey>
+    <bcf:citekey order="8">Niemz2007</bcf:citekey>
+    <bcf:citekey order="9">Dawson1980</bcf:citekey>
+    <bcf:citekey order="9">Feather1989</bcf:citekey>
+    <bcf:citekey order="10">Kollias2010</bcf:citekey>
+    <bcf:citekey order="11">Hajizadeh-Saffar1990</bcf:citekey>
+    <bcf:citekey order="12">Duderstadt1976</bcf:citekey>
+    <bcf:citekey order="13">Farrell1992</bcf:citekey>
+    <bcf:citekey order="14">Farrell1992</bcf:citekey>
+    <bcf:citekey order="15">Welch2011</bcf:citekey>
+    <bcf:citekey order="16">Labspherea</bcf:citekey>
+    <bcf:citekey order="17">Springsteen1998</bcf:citekey>
+    <bcf:citekey order="18">Labspherec</bcf:citekey>
+    <bcf:citekey order="18">Glennie2014b</bcf:citekey>
+    <bcf:citekey order="19">Tseng2008</bcf:citekey>
+    <bcf:citekey order="20">Zhu2014</bcf:citekey>
+    <bcf:citekey order="21">Prahl2001</bcf:citekey>
+    <bcf:citekey order="22">Jacques1998</bcf:citekey>
+    <bcf:citekey order="23">Kim2011</bcf:citekey>
+    <bcf:citekey order="24">Jacques1998</bcf:citekey>
+    <bcf:citekey order="25">Kundur1996</bcf:citekey>
+    <bcf:citekey order="25">Gonzalez2003</bcf:citekey>
+    <bcf:citekey order="26">Labspherec</bcf:citekey>
+    <bcf:citekey order="27">Glennie2014b</bcf:citekey>
+    <bcf:citekey order="28">Fitzpatrick1988</bcf:citekey>
+    <bcf:citekey order="29">Arimoto2006</bcf:citekey>
+    <bcf:citekey order="30">Kienle1996a</bcf:citekey>
+    <bcf:citekey order="31">Alerstam2013</bcf:citekey>
+    <bcf:citekey order="32">Wang1995</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2124,6 +2178,13 @@
   </bcf:sorting>
   </bcf:sortlist>
   <bcf:sortlist section="3" name="none" type="entry" sortscheme="none">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
+  <bcf:sortlist section="4" name="none" type="entry" sortscheme="none">
   <bcf:sorting>
     <bcf:sort order="1">
       <bcf:sortitem order="1">citeorder</bcf:sortitem>
