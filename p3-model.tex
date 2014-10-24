@@ -1,7 +1,11 @@
 \section*{Preamble}
-Paper III continues...
-Mention appendix A
-rationale, overview, co-authorship statement,, when the work was done, ethics approval (if applicable)
+Paper III proposes a spectrally-constrained model for interpreting the total diffuse reflectance spectra obtained with the integrating sphere-based system outlined in Paper~1. The model was developed from the one dimensional diffusion theory approximation of the radiation transport equation\cite{Farrell1992} where each scatter point acts as a point source. The coefficients for the solution to the resulting ordinary differential equation were determined by applying the extrapolated boundary condition.
+
+The necessary corrections to modify a measured reflectance spectrum into the true reflectance spectrum were thoroughly considered. The Single Beam Substitution Error (SBSE) was previously addressed in Paper~1, while the scattering losses that result from calibration with a highly scattering Spectralon\textregistered~standard were investigated in this paper. To determine the functional form of this correction factor (SLCF), mono Monte Carlo simulations were performed and then confirmed with tissue-simulating liquid phantoms.
+
+The order in which these corrections are applied in the fitting algorithm was determined based on the required parameters for each step. The robustness of the model was then tested for effects of noise, and changes in the scattering and background absorption coefficients. Finally, the model was used to interpret the previously collected lidocaine \& epinephrine data from Paper~2 and compared to the Dawson erythema index.\cite{Dawson1980}
+
+All of the work undertaken for this paper was performed by the author of this thesis (further known as ``the author'') under the supervision of Drs. T. Farrell and J. Hayward with the following exceptions; As previously mentioned, the epinephrine study was jointly undertaken by the author and Dr. D. McKee, the liquid phantoms were prepared by Mr. D. Gallino, the spatially-resolved diffuse reflectance measurements were collected and analyzed with the help of Mr. D. Cappon, and the Monte Carlo simulation code was written with significant help by Dr. G. Devenyi. The manuscript was written by the author and edited by Drs. Farrell and Hayward. The manuscript has been altered from its original form to match the style of this thesis.
 
 \section*{Contents}
 
@@ -55,7 +59,7 @@ An appropriate model is required to interpret the total diffuse reflectance spec
 
 \subsection{Forward Model Derivation}
 \label{sec:forward_model}
-There are several different ways of modelling light transport in tissue. One such approach is the Boltzmann Radiative Transport Equation (RTE), which describes the stochastic behavior of neutral particles such as photons.\cite{Duderstadt1976} When sufficiently far from a boundary within a turbid material, the RTE can be accurately approximated by the steady-state diffusion equation,\cite{Farrell1992}
+There are several different ways of modeling light transport in tissue. One such approach is the Boltzmann Radiative Transport Equation (RTE), which describes the stochastic behavior of neutral particles such as photons.\cite{Duderstadt1976} When sufficiently far from a boundary within a turbid material, the RTE can be accurately approximated by the steady-state diffusion equation,\cite{Farrell1992}
 
 \begin{equation}
 \label{eq:SSDE}
@@ -167,6 +171,7 @@ Since the scattering properties of human epidermis and dermis do not vary widely
 As mentioned in Section~,\ref{sec:fitting_algorithm} absorption by melanin and the structural components in skin were combined into a single background absorption term. Depending on the timeline over which measurements are taken, it is possible that the contributing absorber concentrations may change. The model is expected to correctly account for this change and to accurately recover the hemoglobin concentrations. To verify this expectation, a set of Fitzpatrick Type III spectra were produced with simultaneously increasing hemoglobin (up to 200 percent) and background absorbers (up to 40 percent). If the increase in background absorption was due solely to the increase in melanin concentration, a 40 percent increase would correspond to a reclassification of a Type III skin type into a Type IV skin type, which is highly improbable but would be visibly noticeable and so represents the upper limit of absorption increase. These spectra were fitted and the hemoglobin concentrations were recovered and compared to the input values.
 
 \subsection{Determination of the Scattering Losses Correction Factor}
+\label{sec:SLCF_methods}
 The magnitude of the scattering losses is sphere dependent and inversely proportional to the absorption and reduced scattering coefficients, i.e., for a given IS geometry, it will increase as either the absorption or scattering coefficients decrease. Monte Carlo (MC) simulations were used to determine the functional form of the SLCF and empirical measurements were used to verify and obtain the exact parameters of the functional form.
 A variation of the standard MC simulation called a Mono MC\cite{Kienle1996a} (or “White MC”)\cite{Alerstam2013} was used to economize the computationally expensive simulation. Under this approach, photons were tracked through the material with only scattering properties defined, and the effect of absorption was applied afterward. The MC geometry matched the actual IS measurements, with a sphere wall reflectance coefficient of 0.95. The semi-infinite homogeneous tissue was assigned a refractive index of 1.33 and an anisotropy factor of 0.9.\cite{Wang1995} Simulations were performed for a range of reduced scattering coefficients from 0.50 to 4.00 $mm^{-1}$. For each simulation, a range of absorption coefficients from 0.01 to 10.00 $mm^{-1}$ was applied to obtain simulated reflectance values $R_{sim}$, which represented the reflectance measured with the IS. These values were then combined with reflectance values calculated with the model $R_{calc}$, to achieve SLCFs as follows,
 
@@ -184,5 +189,74 @@ An \emph{in vivo} experiment was performed to determine the time to maximal vaso
 \section{Results \& Discussion}
 
 \subsection{Model Characterization}
+\label{sec:model_char}
 
 \subsubsection{Effect of Noise}
+Test spectra with varying levels of noise were processed via the fitting algorithm to obtain the best fit parameters. For each set of five spectra, the mean and standard error of the percent difference between the recovered and input oxy- and deoxy- hemoglobin concentrations were calculated. The results for the Fitzpatrick Type III, normal hemoglobin concentration spectra are shown in Figure~\ref{fig:p3-oxy_deoxy_total}. The average oxy-, deoxy-, and total hemoglobin concentrations for each noise level agreed with the corresponding input concentrations, with the total hemoglobin having the smallest standard deviation. This observation, that the two hemoglobin concentrations are coupled parameters, can be explained by the spectral similarities between the oxy- and deoxy- hemoglobin extinction coefficient spectra. The two spectra vary only within a small wavelength range (500-600 nm), and since these two chromophores only contribute a small fraction to the total absorption in skin, a portion of one of the chromophore concentrations may be erroneously contributed to the other without substantially impacting the fit. Therefore, future analysis should focus on the recovered total hemoglobin rather than the two individual hemoglobin chromophores as it has been shown to return a more consistently accurate result.
+
+\begin{figure}
+	\centering \includegraphics[width=0.8\textwidth]{figures/p3-oxy_deoxy_total.png}
+	\caption[Percent differences between the recovered and input hemoglobin concentrations]{\label{fig:p3-oxy_deoxy_total}Percent differences between the recovered and input concentrations for a) oxy-hemoglobin and b) deoxy-hemoglobin. When combined into a total hemoglobin concentration (c), the standard deviation (represented by error bars) is consistently reduced.}
+\end{figure}
+
+The results are the same for the Type V reflectance spectra, which suggests that melanin, a broad spectrum absorber, does not mask the absorption effects of hemoglobin within the wavelength range of interest.
+
+Further inspection of Figure~\ref{fig:p3-oxy_deoxy_total}c indicates that the noise generally increases the uncertainty for single measurements. This is expected, since the hemoglobin spectral features become harder to differentiate as the noise increases, particularly for higher melanin and/or lower hemoglobin concentrations. For the noise levels associated with the IS system (two percent), the difference between the input and recovered total hemoglobin concentrations did not exceed five percent for any of the 240 individual test spectra processed. Since this level of variation is of the same order as the observed daily variation in hemoglobin concentration,\cite{Fullerton1996} it is considered acceptable.
+
+\subsubsection{Effect of an Incorrect Scatter Coefficient Spectrum}
+The eight Fitzpatrick Type III reflectance spectra with increasing total hemoglobin concentrations and characteristic noise were processed using the model and different assumed reduced scattering coefficient spectra. The maximum percent difference between the recovered and input total hemoglobin concentrations increased linearly with the reduced scattering coefficient spectrum (not shown). For example, if the model employed an assumed reduced scattering coefficient spectrum that was ten percent higher than the actual input scatter coefficient spectrum, the recovered total hemoglobin concentration also had a maximum difference on the order of ten percent. This agrees with what is known about the coupled nature of the scattering and absorption coefficients: that if both of the coefficients are increased by the same factor, they produce the same total diffuse reflectance.
+
+There is a large body of research regarding the reduced scattering coefficient spectrum of skin and therefore, it is unlikely that the assumed reduced scatter spectrum will ever exceed an absolute difference of ten percent unless the individual suffers from a condition that causes abnormal keratin or collagen fiber growth. As such, it is expected that the total hemoglobin concentration for most individuals can be recovered to within ten percent.
+
+The diffuse reflectance model assumed a homogeneous single layer, while skin is actually a layered structure with melanin in the epidermal layer and hemoglobin in the dermal layer. Consequently, only the recovery of a perceived or apparent chromophore concentration is possible with the model. The recovered total hemoglobin concentrations expressed as a percent increase relative to an initial, baseline measurement can act as a proxy measure of the actual hemoglobin concentration found in the dermal layer. It also has the added benefit of removing any effects caused by an incorrectly assumed reduced scattering coefficient, as shown in Figure~\ref{fig:p3-incorrect_scatter}. When expressed in this manner, the percent difference only exceeds five percent for atypical skin conditions such as when the hemoglobin concentration is alarmingly low (25 percent) or when the assumed reduced scattering coefficient deviates from average values by greater than 50 percent.
+
+\begin{figure}
+	\centering \includegraphics[width=0.8\textwidth]{figures/p3-incorrect_scatter.png}
+	\caption[Total hemoglobin concentration recovered with the erroneous reduced scattering coefficients]{\label{fig:p3-incorrect_scatter}Total hemoglobin concentration recovered with the erroneous reduced scattering coefficients ($\mu_s'$) as a function of input total hemoglobin concentration. When the hemoglobin concentration is expressed as a fraction of a baseline measurement, the effects of an incorrectly assumed reduced scatter coefficient spectrum are removed. The line of unity has been added for visualization purposes. Error bars are only shown for the $2.0 \times \mu_s'$ data series.}
+\end{figure}
+
+\subsubsection{Effect of Changes to Background Absorption}
+\label{sec:effect_bkg}
+The relative total hemoglobin concentrations were recovered from the Fitzpatrick Type III reflectance spectra containing simultaneously increasing hemoglobin and background absorber concentrations (including melanin) using the model. In order to compare the performance of the model with common LIR techniques, the Dawson corrected Erythema Index\cite{Dawson1980} (EI\textsubscript{c}) was also calculated. The Dawson model was chosen because it was one of the first models created and is commonly cited in the literature. The total hemoglobin concentrations, expressed as a percent increase from the baseline measurement, are shown in Figure~\ref{fig:p3-bkg_changes} for both approaches.
+
+\begin{figure}
+	\centering \includegraphics[width=0.8\textwidth]{figures/p3-bkg_changes.png}
+	\caption[Hemoglobin recovery with changing background absorber concentrations]{\label{fig:p3-bkg_changes}Percent increases in the total hemoglobin for reflectance spectra with simultaneously increasing hemoglobin and background absorbers. The model was able to account for changes in the background absorption and follows the line of unity, while the Dawson approach underestimates the increase in hemoglobin concentration.}
+\end{figure}
+
+Increases in the background absorption were found to have no impact on the relative total hemoglobin concentrations recovered with the model, as it was able to adjust the background absorption parameters to account for these changes. However, since the EI\textsubscript{c} equates relative hemoglobin changes to a change in the area under the LIR curve, the decrease in area due to the increased background absorption is erroneously interpreted, resulting in an under-estimation of the relative total hemoglobin.
+
+\subsection{Empirical Determination of the Scattering Losses Correction Factor}
+Consideration of the SLCFs from the MC simulations (Section~\ref{sec:SLCF_methods}) as a function of the absorption and reduced scattering coefficients indicated that there were two distinct regions within the data that roughly corresponded to values for which the diffusion approximation was valid, and for which the diffusion approximation did not hold. Inspection of the boundaries of the diffusion theory region suggested that it was approximately limited to values where the absorption coefficient was less than or equal to 5 percent of the reduced scattering coefficient. This agrees with the generally accepted limit on the diffusion theory which states that the absorption coefficient should be less than 10 percent of the reduced scattering coefficient. Since the model and the prediction of the SLCF both depend on diffusion theory, only those points in the calculated reflectance spectra (and their corresponding points in the measured spectra) that meet the optical property criterion of diffusion theory may be used in the fitting algorithm. SLCFs within the diffusion theory region ranged from 0.5 to 1.0 while values outside of the diffusion theory region exceeded 1.0, which could only be possible if additional light was being scattered into the IS. Only points where the relationship between the absorption and reduced scattering coefficient satisfied the diffusion theory were used to determine the functional form of the SLCF.
+
+Scatter plots of the SLCF as a function of the absorption coefficient for single values of the reduced scattering coefficient (iso-lines) indicated a linear relationship with respect to the natural logarithm of the absorption coefficient. The scaling coefficient has a power-law relationship with the reduced scattering coefficient, resulting in a function form of,
+
+\begin{equation}
+\label{eq:SLCF}
+	SLCF(\mu_a,\mu_s') = a \times \mu_s'^b \ln(\mu_a) + c
+\end{equation}
+
+The Intralipid\textregistered~phantom measurements were used to confirm Equation~\ref{eq:SLCF}, with triplets outside of the diffusion theory region omitted. This empirical fit was used to correct for scattering losses in the \emph{in vivo} study analysis.
+
+\subsection{\emph{In Vivo} Study Analysis}
+Each IS measurement from the \emph{in vivo} study was processed with the model and fitting algorithm as well as with the Dawson model for comparison purposes. A complete report of the analysis of the Dawson model was performed by McKee et al. (2013).\cite{McKee2013} A sample fit of the total DRS model to an individual IS measurement is shown in Figure~\ref{fig:p3-sample_fit}. Measured spectra with greater hemoglobin concentrations were observed to yield better fits with the model within the 520-580 nm region. This may be attributed to the difficulty of, and ambiguity in, combining the available extinction coefficient spectra in the absence of distinct hemoglobin spectral features. 
+
+\begin{figure}
+	\centering \includegraphics[width=0.8\textwidth]{figures/p3-sample_fit.png}
+	\caption[Sample DRS spectrum and model fit]{\label{fig:p3-sample_fit}Sample spectrum ($\bullet$) and fit (red line). The measured spectrum has been down-sampled for illustration purposes. Measurement error bars are too small to be visible.}
+\end{figure}
+
+Based on the observations from Section~\ref{sec:model_char} that: (1) it is difficult to separate the oxy- and deoxy-hemoglobin contributions, and (2) that a relative increase in hemoglobin concentration removes any effects due to an incorrectly assumed reduced scattering coefficient spectrum, both the total hemoglobin concentration and corrected erythema index were expressed as a percent increase from the average of the baseline measurements. A sample time series of one of the volunteers is shown in Figure~\ref{fig:p3-lido_epi}.
+
+\begin{figure}
+	\centering \includegraphics[width=0.8\textwidth]{figures/p3-lido_epi.png}
+	\caption[Hover and figure index text]{\label{fig:p3-lido_epi}Sample time series for a single volunteer using both the total DRS model and the Dawson EI model. Error bars are shown only for the Dawson model as the returned standard deviation for the total DRS model is consistently less than 2 percent and not visible on this scale.}
+\end{figure}
+
+The two methods agree everywhere except immediately following the injection. This difference may be due to initial bleeding and/or swelling following the insertion of the needle, which would have led to changes in the scattering and/or the relative concentrations of the chromophores from the baseline measurements. Since the LIR approach was shown in Section~\ref{sec:effect_bkg} to be unable to correctly interpret changes to non-hemoglobin chromophore concentrations, it is most likely that the erythema index is underestimating the skin redness in this situation.
+
+\section{Conclusion}
+In this paper, a model was derived for the total diffuse reflectance spectrum based on a semi-infinite, broad beam homogeneous geometry. The model was then used to interpret total diffuse reflectance spectra obtained with an integrating sphere placed on the skin, following corrections for the perturbations associated with this measurement technique. Characterization of the model and system showed that this approach was insensitive to characteristic noise, and able to account for any deviations from the assumed reduced scattering coefficient spectrum. When compared to a common log inverse reflectance approach, the model proved superior in its ability to successfully interpreted changes to background absorber concentrations. Finally, the model was applied to reflectance spectra obtained during an in vivo study and compared to analysis using the Dawson erythema index. The two methods agreed over the majority of the measurement period, but differed immediately following injection, most likely due to the Dawson model incorrectly interpreting the acute response to the needle insertion.
+
+\section*{Acknowledgments}
+The authors would like to thank Dr. Daniel E. McKee for his help with the in vivo study and Dr. Gabriel A. Devenyi for his help with the Monte Carlo simulations. Monte Carlo simulations were performed using the facilities at SHARCNET (Shared Hierarchical Research Computing Network: \url{www.sharcnet.ca}) and Compute/Calcul Canada. This work was financially supported by the Natural Sciences and Engineering Research Council of Canada (NSERC).
