@@ -2179,16 +2179,19 @@
     <bcf:datasource type="file" datatype="bibtex">library.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="7">
-    <bcf:citekey order="1">Hancock2003</bcf:citekey>
-    <bcf:citekey order="2">Randeberg2005</bcf:citekey>
-    <bcf:citekey order="3">Randeberg2006</bcf:citekey>
-    <bcf:citekey order="4">Peters1990</bcf:citekey>
-    <bcf:citekey order="4">Tromberg2005</bcf:citekey>
-    <bcf:citekey order="5">Porock1999</bcf:citekey>
-    <bcf:citekey order="5">Tromberg2010</bcf:citekey>
-    <bcf:citekey order="6">Diffey1991</bcf:citekey>
-    <bcf:citekey order="6">Harrison2002</bcf:citekey>
-    <bcf:citekey order="7">Fitzpatrick1988</bcf:citekey>
+    <bcf:citekey order="1">Larrabee1987</bcf:citekey>
+    <bcf:citekey order="2">Dawson1980</bcf:citekey>
+    <bcf:citekey order="3">Farrell1992</bcf:citekey>
+    <bcf:citekey order="4">Hancock2003</bcf:citekey>
+    <bcf:citekey order="5">Randeberg2005</bcf:citekey>
+    <bcf:citekey order="6">Randeberg2006</bcf:citekey>
+    <bcf:citekey order="7">Peters1990</bcf:citekey>
+    <bcf:citekey order="7">Tromberg2005</bcf:citekey>
+    <bcf:citekey order="8">Porock1999</bcf:citekey>
+    <bcf:citekey order="8">Tromberg2010</bcf:citekey>
+    <bcf:citekey order="9">Diffey1991</bcf:citekey>
+    <bcf:citekey order="9">Harrison2002</bcf:citekey>
+    <bcf:citekey order="10">Fitzpatrick1988</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
