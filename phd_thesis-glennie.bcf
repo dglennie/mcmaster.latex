@@ -2007,16 +2007,17 @@
     <bcf:citekey order="45">Wong2009</bcf:citekey>
     <bcf:citekey order="46">Wong2009</bcf:citekey>
     <bcf:citekey order="47">Kochevar2012a</bcf:citekey>
-    <bcf:citekey order="48">Nakagawa2010</bcf:citekey>
-    <bcf:citekey order="49">Bargo2005</bcf:citekey>
-    <bcf:citekey order="50">Prahl2001</bcf:citekey>
+    <bcf:citekey order="48">Richards-Kortum1996</bcf:citekey>
+    <bcf:citekey order="49">Nakagawa2010</bcf:citekey>
+    <bcf:citekey order="50">Bargo2005</bcf:citekey>
     <bcf:citekey order="51">Prahl2001</bcf:citekey>
-    <bcf:citekey order="52">McNulty2011</bcf:citekey>
-    <bcf:citekey order="53">Kellogg2012</bcf:citekey>
-    <bcf:citekey order="54">Fitzgerald2008</bcf:citekey>
-    <bcf:citekey order="55">Simonen1998</bcf:citekey>
-    <bcf:citekey order="56">Yudovsky2010a</bcf:citekey>
-    <bcf:citekey order="56">Yudovsky2011</bcf:citekey>
+    <bcf:citekey order="52">Prahl2001</bcf:citekey>
+    <bcf:citekey order="53">McNulty2011</bcf:citekey>
+    <bcf:citekey order="54">Kellogg2012</bcf:citekey>
+    <bcf:citekey order="55">Fitzgerald2008</bcf:citekey>
+    <bcf:citekey order="56">Simonen1998</bcf:citekey>
+    <bcf:citekey order="57">Yudovsky2010a</bcf:citekey>
+    <bcf:citekey order="57">Yudovsky2011</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2178,6 +2179,16 @@
     <bcf:datasource type="file" datatype="bibtex">library.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="7">
+    <bcf:citekey order="1">Hancock2003</bcf:citekey>
+    <bcf:citekey order="2">Randeberg2005</bcf:citekey>
+    <bcf:citekey order="3">Randeberg2006</bcf:citekey>
+    <bcf:citekey order="4">Peters1990</bcf:citekey>
+    <bcf:citekey order="4">Tromberg2005</bcf:citekey>
+    <bcf:citekey order="5">Porock1999</bcf:citekey>
+    <bcf:citekey order="5">Tromberg2010</bcf:citekey>
+    <bcf:citekey order="6">Diffey1991</bcf:citekey>
+    <bcf:citekey order="6">Harrison2002</bcf:citekey>
+    <bcf:citekey order="7">Fitzpatrick1988</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2213,6 +2224,27 @@
   </bcf:sorting>
   </bcf:sortlist>
   <bcf:sortlist section="4" name="none" type="entry" sortscheme="none">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
+  <bcf:sortlist section="5" name="none" type="entry" sortscheme="none">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
+  <bcf:sortlist section="6" name="none" type="entry" sortscheme="none">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
+  <bcf:sortlist section="7" name="none" type="entry" sortscheme="none">
   <bcf:sorting>
     <bcf:sort order="1">
       <bcf:sortitem order="1">citeorder</bcf:sortitem>
