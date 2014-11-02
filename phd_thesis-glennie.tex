@@ -83,10 +83,10 @@
 \date{\today}
 
 %This stuff is used to generate a nomenclature section
-\makeindex
-\renewcommand{\nomname}{List of Abbreviations and Symbols}
-\renewcommand{\nomlabel}[1]{\textbf{#1}}
-\makenomenclature
+%\makeindex
+%\renewcommand{\nomname}{List of Abbreviations and Symbols}
+%\renewcommand{\nomlabel}[1]{\textbf{#1}}
+%\makenomenclature
 \raggedbottom
 \begin{document}
 
@@ -111,7 +111,7 @@
 \vfill
 By DIANA L.\ GLENNIE, B.\ SC., M.\ SC.\\}
 \vfill
-A Thesis Submitted to the School of Graduate Studies in Partial Fulfilment of
+A Thesis Submitted to the School of Graduate Studies in Partial Fulfillment of
 the Requirements for the Degree Doctor of Philosophy
 \vfill%This pushes copyright to the bottom
 McMaster University \textcopyright{} Copyright by Diana L.\ Glennie, November 2014
@@ -126,18 +126,18 @@ NUMBER OF PAGES: ix,~\pageref{LastPage}}
     \begin{abstract}
         \thispagestyle{plain}
         \setcounter{page}{3}
-            An abstract of not more than 300 words must be included and will indicate the major emphasis of the thesis, new discoveries, and its contribution to knowledge. The style of abstract varies somewhat from discipline to discipline; the student should follow an appropriate style.
+			The ability to monitor changes in skin redness through the hemoglobin concentration in skin has the potential to personalize patient care by providing a quantitative objective way of monitoring patient response to interventions such as radiation therapy and plastic surgery. Currently available commercial systems for monitoring skin redness rely on total diffuse reflectance spectroscopy that can only accurately measure hemoglobin changes relative to a baseline measurement when all other skin chromophores, such as melanin, remain constant. This work investigates the application of a spectrally-constrained diffusion theory model for analyzing total diffuse reflectance spectra obtained with an integrating sphere-based system. A low cost integrating sphere-based system was designed, constructed, and characterized to yield accurate total diffuse reflectance spectra. The system was first used with an absorbance-based erythema index to investigate the time to maximal effect of epinephrine – a vasoconstrictor used in plastic surgery. A spectrally-constrained diffusion theory model was developed to improve the interpretation of the reflectance spectra obtained with the integrating sphere-based system. Correction factors necessary to apply the developed model to the obtained spectra were determined through Monte Carlo simulations, and then confirmed with tissue-simulating liquid phantoms. The model was tested for sensitivity and specificity, as well as how it responded to variations in the experimental parameters. The system and model were then used to monitor radiation-induced erythema in head and neck intensity modulated radiation therapy patients. Analysis of the results enabled earlier detection of erythema by 1-19 compared to visual assessment. The work completed in this thesis illustrates a cost-effective, user-friendly diffuse reflectance spectroscopy system which has potential applications in a number of clinical settings.
     \end{abstract}
 
     \renewcommand{\abstractname}{Acknowledgements}
-    \begin{abstract} \setcounter{page}{4} \thispagestyle{plain}
+    \begin{abstract} \setcounter{page}{5} \thispagestyle{plain}
         This is where I get all mushy and thank the people who've helped me get to where I am today.
     \end{abstract}
     
     \setcounter{secnumdepth}{3} %Make TOC include subsubsections
     \tableofcontents %Prints table of contents
-    {\listoffigures \let\cleardoublepage\clearpage %This fixes up an extra blank page
-    \printnomenclature} %Print glossary/nomenclature/abbreviations
+    {\listoffigures \let\cleardoublepage\clearpage} %This fixes up an extra blank page
+    %\printnomenclature} %Print glossary/nomenclature/abbreviations
 
     \renewcommand{\abstractname}{Declaration of Academic Achievement}
     \begin{abstract} \thispagestyle{plain} \setcounter{page}{9} %This page number needs to be manually set properly after the tableofcontents is generated
@@ -194,6 +194,7 @@ NUMBER OF PAGES: ix,~\pageref{LastPage}}
 %\printbibliography{}
 %\printindex
 
-\appendix
-\chapter{Appendix A}
+%\appendix
+%\chapter{Appendix A}
+
 \end{document}
